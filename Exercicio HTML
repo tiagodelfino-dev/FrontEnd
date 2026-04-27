@@ -1,0 +1,72 @@
+HTML ****************************************************************
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Separado</title>
+
+    <!-- Conectando o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="titulo">Olá, mundo!</h1>
+
+    <div class="caixa">
+        <p id="texto">Este é um texto de exemplo.</p>
+
+        <button onclick="mudarTexto()">
+            Clique aqui
+        </button>
+    </div>
+
+    <!-- Conectando o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+CSS******************************************************************
+
+
+body {
+    background-color: #f0f0f0; /* Altere a cor */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: blue; /* Mude a cor do título */
+}
+
+.caixa {
+    background-color: white;
+    border: 2px solid black; /* Mude a borda */
+    padding: 20px;
+    margin: 20px;
+}
+
+button {
+    background-color: green; /* Mude a cor do botão */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+JAVA_SCRIPT ********************************************************
+
+
+
+function mudarTexto() {
+    let texto = document.getElementById("texto");
+
+    texto.innerHTML = "O texto foi alterado!";
+}
